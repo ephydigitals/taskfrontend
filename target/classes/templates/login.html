@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TaskMaster Pro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(38,166,91);
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .logo-container img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .login-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .login-container .form-group {
+            margin-bottom: 15px;
+        }
+
+        .login-container .btn-primary {
+            background-color: rgb(38,166,91);
+            border: none;
+            color: white;
+        }
+
+        .login-container .btn-primary:hover {
+            background-color: rgb(38,166,91);
+        }
+
+        footer {
+            background-color: rgb(38,166,91);
+            margin-top: 5%;
+            color: white;
+            padding: 0px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            position: fixed;
+        }
+
+        footer a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="https://app.3mtt.training/static/media/main.242b8b1ce339b38fd589.png" alt="Logo">
+    </div>
+    <hr style="width:5%; align-items: center;">
+    <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+        <a class="navbar-brand mx-auto" href="#" style="color: #26A65B;">Task Master Pro. Project</a>
+    </nav>
+    
+
+   
+    <div class="login-container">
+        <h2>Login</h2>
+        <form method="post" action="/login">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="mt-3">Don't have an account? <a href="/signup">Sign up here</a></p>
+        
+    </div>
+    
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Task Master Pro. Project. All rights reserved.</p>
+            <p>
+                Project by: 
+                <a href="view_developers.html">View Developers</a>
+                
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
